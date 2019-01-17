@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-12 col-md-offset-0">
+        <h4>GENRE & MOODS</h4>
+
+		<div ng-app="spotifyApp" ng-controller="browseController" id="spotifyApp">
+
+		     <ul>
+		      <!-- display each object using ng-repeat directive -->
+		      <li ng-repeat="x in pieces | search: keyword">
+		        <a href="{{ x.url }}" target="_blank">
+			        <img onload="this.src=baseUrl;" src="{{ x.image }}">
+			        <i class="fa fa-{{ x.fontawesome }}"></i>
+			        <h4>{{ x.title }}</h4>
+		    	</a>
+		        <p>{{ x.artist }}</p>
+		      </li>
+		    </ul>
+		</div>
+    </div>
+</div>

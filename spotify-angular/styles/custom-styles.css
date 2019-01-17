@@ -1,0 +1,254 @@
+/*************************
+TABLE OF CONTENTS - Andres Ruiz Droege, 2018
+
+1. Custom Fonts - ARD
+2. Header and Navigation - ARD
+3. Main Content - ARD
+4. Footer - ARD
+5. Media Queries - ARD
+
+***************************
+*/
+
+html {
+	background: #335d5c; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #335d5c 0%, #518e93 50%, #335d5c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #335d5c 0%,#518e93 50%,#335d5c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #335d5c 0%,#518e93 50%,#335d5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#335d5c', endColorstr='#335d5c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-repeat: no-repeat;
+}
+
+.clear {
+	clear: both;
+}
+
+/*************************
+
+1. Custom Fonts - ARD
+***************************
+*/
+
+
+.fa {
+	color: #a0a0a0;
+}
+
+.navbar-default .navbar-left>li:hover {
+	border-bottom: 1px solid #1ED760;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #1ED760;
+
+}
+
+/*************************
+
+2. Header and Navigation - ARD
+***************************
+*/
+
+body {
+	background: transparent;
+}
+
+.navbar-default {
+
+	border: none;
+}
+
+.navbar {
+	padding-top: 0px;
+	margin-bottom: 0px;
+	background: transparent;
+}
+
+.navbar-nav .active a {
+	color: #1ED760 !important;
+	background-color: transparent !important;
+}
+.navbar-nav .active {
+	border-bottom: 1px solid #1ED760 !important;
+}
+
+.navbar-default .navbar-nav>li {
+    border-bottom: 1px solid #a0a0a0;
+    padding-bottom: 4px;
+    margin: 0px 15px 0px 15px;
+}
+.navbar-default .navbar-right>li {
+	    margin: 5px 15px 0px 15px;
+
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #a0a0a0;
+    font-size: 16px;
+    font-family: helvetica, arial, sans-serif;
+    padding: 20px 0px 5px 0px;
+}
+
+.navbar-header .navbar-brand {
+	width: 75px;
+    margin: 0px !important;
+    padding: 15px 20px 10px 20px;
+}
+
+.navbar-header .navbar-brand img {
+	width: 90%;
+}
+
+.navbar-default .navbar-nav>li.profile-pic {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+.navbar-default .navbar-nav>li.profile-pic a {
+	padding: 0px;
+	line-height: inherit;
+	display: inline;
+}
+
+.navbar-default .navbar-nav>li.profile-pic img {
+	width: 100%;     
+	border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.navbar-right input {
+    background: transparent;
+    border: none;
+    margin: 15px 0px 0px 0px;
+    color: #a0a0a0;
+}
+
+.navbar-right input, 
+.navbar-right select, 
+.navbar-right textarea {
+    color: #1ED760;
+}
+
+.navbar-right textarea:focus, 
+.navbar-right input:focus{
+    outline: none;
+}
+
+.navbar-right input::placeholder {
+	color: #a0a0a0;
+	font-size: 16px;
+}
+
+
+/*************************
+
+3. Main Content - ARD
+***************************
+*/
+
+.container.main {
+    padding-bottom: 175px;
+}
+
+.ng-scope div {
+	margin-top: 10px;
+}
+
+.ng-scope h4 {
+	color: #ffffff;
+}
+
+
+.ng-scope .col-md-offset-0 {
+	margin-left: 20px;
+}
+
+
+
+.container.main #spotifyApp p:first-child { 
+  background: #d6eaff;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.container.main #spotifyApp p:first-child input {
+  outline: none;
+  font-size: 18px;
+  width: 96%;
+  border: 0;
+  border-radius: 3px;
+  background: #d6eaff;
+  padding: 8px 5px;
+  font-family: Helvetica;
+}
+
+.container.main #spotifyApp ul li {
+  padding: 10px 5px 0px 5px;
+  overflow: auto;
+  width: 15%;
+  float: left;
+  text-align: center;
+}
+
+.container.main #spotifyApp ul li img,
+.container.main #spotifyApp ul li h4 {
+  float: left;
+}
+
+.container.main #spotifyApp ul li h4 {
+	width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    font-size: 16px;
+    position: relative;
+    bottom: 85px;
+    min-height: 35px;
+    max-height: 35px;
+    overflow: hidden;
+}
+
+.container.main #spotifyApp ul li h4 a { 
+  color: #ffffff;
+}
+
+
+.container.main #spotifyApp ul li a img:hover {
+	border: 1px solid #ffffff;
+	opacity: 0.8;
+
+}
+
+.container.main #spotifyApp ul li img { 
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+    filter: brightness(60%);
+    margin: 0 auto;
+    display: block;
+}
+
+.container.main #spotifyApp ul li p {
+  color: #b2b2b2;
+  font-family: Helvetica;
+  font-size: 14px;
+  position: relative;
+  bottom: 63px;
+  min-height: 35px;
+  max-height: 35px;
+  /*overflow: hidden;*/
+}
+
+.container.main #spotifyApp .fa {
+	color: #ffffff;
+    position: relative;
+    bottom: 120px;
+    right: 0%;
+    font-size: 45px;
+}
+
+
+

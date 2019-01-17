@@ -1,0 +1,33 @@
+
+@media (max-width: 990px) {
+
+	.container.main #spotifyApp ul li {
+		width: 33.3%;
+	}
+
+/*	.navbar-left {
+	    float: left!important;
+	    width: 30%
+	}
+
+	.navbar-right {
+    	float: right!important;
+    	width: 33%;
+    	margin-right: 10%;
+	}
+
+	.navbar-default .navbar-nav>li.profile-pic {
+		float: right;
+	}*/
+
+}
+
+
+@media (max-width: 457px) { 
+
+	.container.main #spotifyApp ul li {
+		width: 50%;
+	}
+
+
+}
