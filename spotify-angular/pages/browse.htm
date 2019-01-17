@@ -8,7 +8,7 @@
 		      <!-- display each object using ng-repeat directive -->
 		      <li ng-repeat="x in pieces | search: keyword">
 		        <a href="{{ x.url }}" target="_blank">
-			        <img onload="this.src=baseUrl;" src="{{ x.image }}">
+			        <img src="{{ x.image }}">
 			        <i class="fa fa-{{ x.fontawesome }}"></i>
 			        <h4>{{ x.title }}</h4>
 		    	</a>
